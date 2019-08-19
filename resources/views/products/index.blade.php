@@ -38,7 +38,7 @@
                                     </td>
                                     <td>
                                         @can('products.destroy')
-                                            {!! Form::open(['route' => ['products.destroy',$product->id, 'method' => 'DELETE']]) !!}
+                                            {!! Form::open(['route' => ['products.destroy',$product->id], 'method' => 'DELETE']) !!}
                                                 <button class="btn btn-sm btn-danger">
                                                     Eliminar
                                                 </button>

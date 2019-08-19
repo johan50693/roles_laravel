@@ -78,7 +78,7 @@ class ProductController extends Controller
     public function update(Request $request, Product $product)
     {
         //
-        $product->update($request->all());
+        $product->update($request->all());      
         return redirect()->route('products.edit',$product->id)->with('info','Se ha actualizado el producto de forma exitosa');
     }
 
@@ -92,6 +92,6 @@ class ProductController extends Controller
     {
         //
         $product->delete();
-        return back()->witch('info','Producto eliminado de manera exitosa'):
+        return back()->with('info','Producto eliminado de manera exitosa');
     }
 }
